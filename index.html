@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EM Designs | e-Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"/>
+    <link rel="stylesheet" href="css/dark-style.css" id="theme-link">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/ae93fb8f92.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="navbar">
+    <div class="navbar-link-brand">
+      EM Designs
+    </div>
+    <div class="navbar-link navbar-link-toggle">
+      <i id="menuIcon" class="fa-solid fa-bars" onclick="iconToggle(this)"></i>
+      <!-- <img id="menuIcon" src="images/list.svg" alt=""> -->
+    </div>
+
+    <nav class="navbar-items">
+      <div class="navbar-link">
+        <a href="#aboutMe">About</a>
+      </div>
+      <div class="navbar-link">
+        <a href="#myProjects">Projects</a>
+      </div>
+      <div class="navbar-link">
+        <a href="#contactMe">Contact</a>
+      </div>
+    </nav>
+    <div class="theme">
+      <button id="themeToggle">
+        <!-- <i id="sun" class="bi bi-brightness-high"></i> -->
+        <i id="sun" class="bi bi-brightness-high" onclick="toggleTheme(this)"></i>
+      </button>
+    </div>
+  </div>
+  <!-- ================= offCanvas Navigation ======================= -->
+  <div class="offCanvas">
+    <ul>
+      <li><a href="#aboutMe" class="navbar-link2">About</a></li>
+      <li><a href="#myProjects" class="navbar-link2">Projects</a></li>
+      <li><a href="#contactMe" class="navbar-link2">Contact</a></li>
+    </ul>
+      <!-- <div>
+        <a href="#aboutMe" class="navbar-link2">About</a>
+      </div>
+      <div>
+        <a href="#myProjects" class="navbar-link2">Projects</a>
+      </div>
+      <div>
+        <a href="#myProjects" class="navbar-link2">Contact</a>
+      </div> -->
+      
+  </div>
+  <!-- ===================================================================== -->
+  <div class="left">
+    <div class="vertical">
+      <hr>
+    </div>
+    <div class="social">
+      <a href="https://www.facebook.com/edwardmanuel.mamangon/" target="_blank"><i class="bi bi-github"></i></a>
+      <a href="https://www.facebook.com/edwardmanuel.mamangon/" target="_blank"><i class="bi bi-linkedin"></i></a>
+      <a href="https://www.facebook.com/edwardmanuel.mamangon/" target="_blank"><i class="bi bi-discord"></i></a>
+      <a href="https://www.facebook.com/edwardmanuel.mamangon/" target="_blank"><i class="bi bi-facebook"></i></a>
+    </div>
+  </div>
+  <div class="right">
+    <div class="vertical">
+      <hr>
+    </div>
+    <div class="mail">
+      <a href="mailto:edward07manuel@gmail.com">edward07manuel@gmail.com</a>
+    </div>
+    <div class="vertical">
+      <hr>
+    </div>
+  </div>
+
+  <main>
+    <div class="hero">
+      <div class="heading">
+        <h3>Hello there!</h3> 
+        <h1>I'm Edward. I love javascript. Sometimes I hate it.</h1> 
+      </div>  
+
+      <div class="subheading">
+        <div class="subcontent">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam fugiat corrupti eius provident nam dignissimos, et consequatur fuga vel error cupiditate debitis, atque mollitia tempora perspiciatis magni rem blanditiis quod!
+          </p>
+          <div>
+            <a class="link" href="#myProjects" > Check out my projects.</a>
+          </div>
+        </div>
+        <div class="hero-img">
+          <img src="images/web-developer.svg" alt="developer">
+        </div>  
+      </div>
+      <!-- <div class="hero-img">
+        <img src="images/web-developer.svg" alt="developer">
+      </div> -->
+    </div>
+  <!-- ====================== About =================================== -->
+    <div id="aboutMe" class="about">
+      <div class="section-header heading">
+        <h3>About Me</h3>
+      </div>  
+      <div>
+        <p class="content">
+          <img class="img-left" src="images/profile-pic.jpg" alt="">
+          My name is Edward Mamangon. I'm a Graphic Designer / Frontend Developer based in the Philippines.  In 2008 I worked as a Graphic Designer for 3 years in a private enterprise specializing in importation of auto parts, accessories, and lubricants. In 2012 I started my Freelancing career as a Graphic Designer until 2021. 
+        </p>
+        <p class="content">
+          I'm currently attending a Web Development bootcamp at KodeGo. The course covers both frontEnd and backend development. 
+        </p>
+        <p class="content">
+          Here are some of the technologies I've been working with recently:
+          <ul class="list">
+            <li>HTML</li>
+            <li>CSS/SASS</li>
+            <li>Javascript</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+
+    <!--================== Experience ========================================-->
+
+    <div class="experience">
+      <div class="section-header heading">
+        <h3>My Work Experiences</h3>
+      </div>
+
+      <div class="work-container">
+        <div class="work-nav">
+          <button id="btnWork1" class="btn-work">Lone Palm</button>
+          <button id="btnWork2" class="btn-work">Tennis Evolution</button>
+          <button id="btnWork3" class="btn-work">Career of the Day</button>
+          <button id="btnWork4" class="btn-work">Helsemin</button>
+          <button id="btnWork5" class="btn-work">Model My Diet</button>
+        </div>
+        <div class="work-content">
+          <div class="work">
+            <h3 id="work1">Graphic Designer/Artist | Lone Palm, LLC</h3>
+            <p id="date">January 2012 - April 2017</p>
+            <p id="description">Designed infographics for different clients to increase traffic to their website.</p>
+          </div>
+          <!-- <div id="work1" class="work">
+            <h3>Graphic Designer/Artist | Lone Palm, LLC</h3>
+            <p>January 2012 - April 2017/p>
+            <p>Designed infographics for different clients to increase traffic to their website.</p>
+          </div>
+
+          <div id="work2" class="work">
+            <h3>Graphic Designer/Artist | Tennis Evolution</h3>
+            <p>January 2012 - April 2017/p>
+            <p>Designed infographics for different clients to increase traffic to their website.</p>
+          </div> -->
+
+        </div>
+      </div>
+    </div>
+
+    <!--================== Projects ========================================-->
+
+    <div id="myProjects" class="projects">
+      <div class="heading">
+        <h3>My Projects</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui debitis animi cupiditate esse minus nihil quae molestias obcaecati repudiandae. Odio, quia suscipit? Corrupti, necessitatibus totam sit qui a perferendis at. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos provident a at repellendus nostrum veniam nam, facere vitae pariatur facilis, ex excepturi accusamus quidem ratione magnam similique culpa! Ratione, nostrum?
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui debitis animi cupiditate esse minus nihil quae molestias obcaecati repudiandae. Odio, quia suscipit? Corrupti, necessitatibus totam sit qui a perferendis at. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos provident a at repellendus nostrum veniam nam, facere vitae pariatur facilis, ex excepturi accusamus quidem ratione magnam similique culpa! Ratione, nostrum?
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui debitis animi cupiditate esse minus nihil quae molestias obcaecati repudiandae. Odio, quia suscipit? Corrupti, necessitatibus totam sit qui a perferendis at. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos provident a at repellendus nostrum veniam nam, facere vitae pariatur facilis, ex excepturi accusamus quidem ratione magnam similique culpa! Ratione, nostrum?
+        </p>
+      </div>
+      
+    </div>
+    <!--================== Contact ========================================-->
+    <div id="contactMe" class="contact">
+      <div class="section-header heading">
+        <h3>Send me a message.</h3>
+      </div>
+      <div class="contact-content">
+        <div class="contact-text">
+          <p>Please get in touch and I'll try my best to answer your inquiry as soon as possible.</p>
+        </div>
+        <div class="contact-link">
+        
+            <a class="link" href="mailto:edward07manuel@gmail.com">Send email.</a> 
+
+        </div>
+      </div>  
+    </div>
+  </main>
+
+
+<!-- ====================== javascript ================================================= -->
+  <script type="text/javascript" src="nav-toggle.js"></script>
+  <script type="text/javascript" src="portfolio.js"></script>
+  <script>
+
+    // var prevScrollpos = window.pageYOffset;
+    // window.onscroll = function() {
+    //   var currentScrollPos = window.pageYOffset;
+    //   if (prevScrollpos > currentScrollPos) {
+    //     document.querySelector(".navbar").style.top = "0";
+    //     document.querySelector(".navbar").classList.add('shadow');
+    //   } else {
+    //     document.querySelector(".navbar").style.top = "-70px";
+    //     document.querySelector(".navbar").classList.remove('shadow');
+    //   }
+    //     prevScrollpos = currentScrollPos;
+    // }
+
+    const themeBtn = document.querySelector('#themeToggle');
+    const theme = document.querySelector('#theme-link');
+
+    themeBtn.addEventListener('click', function ()  {
+       
+        if (theme.getAttribute('href') == "css/dark-style.css") {
+            theme.href = "css/light-style.css";
+        }
+        else {
+            theme.href = "css/dark-style.css";
+        }
+    })
+
+    function toggleTheme(t){
+      t.classList.toggle('bi-moon');
+    }
+
+
+  </script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>  -->
+</body>
+</html>

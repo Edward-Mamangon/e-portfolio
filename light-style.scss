@@ -1,0 +1,44 @@
+@use "dark-style.scss";
+
+  body{
+    background-color: rgb(238, 238, 238) !important;
+    color:rgb(3, 18, 38) !important;
+  }
+
+  a, i{
+    color: rgb(3, 18, 38) !important;
+  }
+
+
+  .navbar {
+    background-color: whitesmoke !important;
+    color: rgb(3, 18, 38) !important;
+    // box-shadow: 0px 1px 10px 0px rgba(0,0,0, 0.5);
+  } 
+
+  .left a, .right a{
+    color: rgb(3, 18, 38) !important;
+  }
+
+  .btn-work{
+    color: rgb(3, 18, 38) !important;
+  }
+
+  #work1{
+    color:rgb(3, 18, 38) !important;
+  }
+
+  #date{
+    color:rgb(83, 83, 90) !important;
+  }
+
+ 
+//===========================================================/
+//=============== media query  ==============================/
+//===========================================================/
+
+@media only screen and (max-width: 768px) {
+  .offCanvasShow{
+    background-color: rgba(245, 245, 245, 0.9) !important;
+  } 
+}
