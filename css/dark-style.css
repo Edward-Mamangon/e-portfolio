@@ -251,6 +251,25 @@ main {
   display: block;
 }
 
+.projects {
+  margin-top: 50px;
+}
+
+.project-item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  justify-items: center;
+}
+
+.project-img {
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.project-img img {
+  max-width: 350px;
+}
+
 .contact {
   margin-top: 50px;
 }

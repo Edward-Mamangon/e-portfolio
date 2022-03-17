@@ -175,7 +175,7 @@ main{
   align-content: center;
   background-color: rgb(68, 65, 110);
 }
-
+//==============Work Experience Section ==========================/ 
 .work-container{
   grid-template-columns: 150px 500px;
   margin-left: 20px;
@@ -246,7 +246,28 @@ main{
 .work:nth-child(1){
   display: block;
 }
-//========= fixed sides section =======================/
+//==============Work Experience Section ==========================/ 
+.projects{
+  margin-top: 50px;
+}
+
+.project-item{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  justify-items: center;
+}
+
+
+.project-img{
+  box-shadow: 0px 1px 10px 0px rgba(0,0,0, 0.5);
+}
+
+.project-img img{
+  max-width: 350px;
+}
+
+//========= Contact section =======================/
 .contact{
   margin-top: 50px;
 }
