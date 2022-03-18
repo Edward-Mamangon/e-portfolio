@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My e-Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="">
+    <div class="container">
+        <div class = "top">    
+            <input type="text" id="input" disabled> 
+            <input type="text" id="output" disabled>
+        </div>
+        <div class = "bottom">
+            <button type="button" id="clear" onclick="clr()">C</button>
+            <button type="button" id="openPar" onclick="getPar('(')">(</button>
+            <button type="button" id="closePar" onclick="getPar(')')">)</button>
+            <button type="button" class="operator" id="plus" onclick="getOperator('+')">+</button>
+            <button type="button" class="operand" id="num7" onclick="getNumber(7)">7</button>
+            <button type="button" class="operand" id="num8" onclick="getNumber(8)">8</button>
+            <button type="button" class="operand" id="num9" onclick="getNumber(9)">9</button>
+            <button type="button" class="operator" id="minus" onclick="getOperator('-')">-</button>
+            <button type="button" class="operand" id="num4" onclick="getNumber(4)">4</button>
+            <button type="button" class="operand" id="num5" onclick="getNumber(5)">5</button>
+            <button type="button" class="operand" id="num6" onclick="getNumber(6)">6</button>
+            <button type="button" class="operator" id="times" onclick="getOperator('*')">x</button>
+            <button type="button" class="operand" id="num1" onclick="getNumber(1)">1</button>
+            <button type="button" class="operand" id="num2" onclick="getNumber(2)">2</button>
+            <button type="button" class="operand" id="num3" onclick="getNumber(3)">3</button>
+            <button type="button" class="operator" id="divide" onclick="getOperator('/')">/</button>
+            <button type="button" class="operand" id="num0" onclick="getNumber(0)">0</button> 
+            <button type="button" id="dot" onclick="getVal()">.</button>   
+           
+            <button type="button" id="equals" onclick="getAns()" onblur="clr()">=</button>
+            <!-- <button type="button" id="del" onclick="back()">&lt;=</button> -->
+        </div>
+
+    </div>
+    </form>
+    
+    <script type="text/javascript" src="calculator.js"></script>
+</body>
+</html>

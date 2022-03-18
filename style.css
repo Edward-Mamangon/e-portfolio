@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    justify-items: center;
+    align-content: center;
+}
+
+.container, .top, .bottom{
+    display: grid;
+}
+
+.container{
+    grid-template-rows: 150px 300px;
+    padding: 2rem;
+    background-color: whitesmoke;
+    border-radius: 20px;
+
+}
+
+.top{
+    grid-template-rows: 40px 70px;
+    grid-template-columns: 300px;
+    border: 1.5px solid rgb(209, 209, 209);
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.bottom {
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: repeat(5, 60px);
+    grid-gap: 5px;
+    justify-content: center;
+}
+
+#output{
+    font-size: 30px;
+}
+
+#output, #input{
+    text-align: right;
+    border: 0;
+    padding: 10px;
+}
+
+button{
+    border-radius: 10px;
+    border: 0;
+    font-size: 18px;
+}
+
+button:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 6px rgb(202, 202, 202);
+}
+
+#equals{
+    grid-area: 5/3/6/5;
+    background-color: lightseagreen;
+    color: whitesmoke;
+}
+
+#equals:hover{
+    grid-area: 5/3/6/5;
+    background-color: rgb(120, 223, 218);
+    color: rgb(58, 58, 58);
+}
+
+.operator{
+    background-color: rgb(255, 127, 110);
+    color: whitesmoke;
+}
+
+.operator:hover{
+    background-color: rgb(255, 169, 158);
+    color: rgb(58, 58, 58);
+}
+
+
+.operand, #clear, #openPar, #closePar, #dot{
+    background-color: rgb(233, 233, 233);
+}
+
+.operand:hover,
+#clear:hover, 
+#openPar:hover, 
+#closePar:hover, 
+#dot:hover{
+    background-color: whitesmoke;
+    color: rgb(58, 58, 58);
+}
